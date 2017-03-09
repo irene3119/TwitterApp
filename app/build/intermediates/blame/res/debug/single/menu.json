@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/src/main/res/menu/menu_main.xml"
+    }
+]

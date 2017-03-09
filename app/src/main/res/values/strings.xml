@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Twitter Client</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="title_activity_timeline">Home Timeline</string>
+    <string name="tweet">Tweet</string>
+    <string name="message_edit_text_hint">What\'s happening?</string>
+    <string name="following">FOLLOWING</string>
+    <string name="followers">FOLLOWERS</string>
+
+</resources>

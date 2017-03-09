@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_add_black_24dp.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_add_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    }
+]

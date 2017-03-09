@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/layout-v16/notification_template_custom_big.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout-v16/notification_template_custom_big.xml"
+    }
+]
