@@ -92,4 +92,15 @@ public class TwitterClient extends OAuthBaseClient {
 		getClient().get(apiUrl,params,handler);
 	}
 
+	public void getFavoriteTimeLine(String screenName, Long max_id, AsyncHttpResponseHandler handler) {
+		String apiUrl = getApiUrl("favorites/list.json");
+		RequestParams params = new RequestParams();
+		params.put("count", 25);
+		params.put("since_id", 1);
+		if(max_id != null)
+			params.put("max_id", max_id);
+		params.put("screen_name", screenName);
+		getClient().get(apiUrl,params,handler);
+	}
+
 }

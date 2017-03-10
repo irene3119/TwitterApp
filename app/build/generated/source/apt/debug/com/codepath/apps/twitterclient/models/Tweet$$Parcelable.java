@@ -8,7 +8,7 @@ import org.parceler.IdentityCollection;
 import org.parceler.ParcelWrapper;
 import org.parceler.ParcelerRuntimeException;
 
-@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2017-03-10T21:51+0800")
+@Generated(value = "org.parceler.ParcelAnnotationProcessor", date = "2017-03-10T23:53+0800")
 @SuppressWarnings({
     "unchecked",
     "deprecation"
@@ -110,6 +110,12 @@ public class Tweet$$Parcelable
                 parcel$$1 .writeInt(1);
                 parcel$$1 .writeInt((tweet$$1 .favorited? 1 : 0));
             }
+            if (tweet$$1 .favoriteCount == null) {
+                parcel$$1 .writeInt(-1);
+            } else {
+                parcel$$1 .writeInt(1);
+                parcel$$1 .writeInt(tweet$$1 .favoriteCount);
+            }
             com.codepath.apps.twitterclient.models.ExtendedEntities$$Parcelable.write(tweet$$1 .extendedEntities, parcel$$1, flags$$0, identityMap$$0);
         }
     }
@@ -202,7 +208,7 @@ public class Tweet$$Parcelable
             User user$$0 = com.codepath.apps.twitterclient.models.User$$Parcelable.read(parcel$$3, identityMap$$1);
             tweet$$4 .user = user$$0;
             int int$$6 = parcel$$3 .readInt();
-            Integer integer$$0;
+            java.lang.Integer integer$$0;
             if (int$$6 < 0) {
                 integer$$0 = null;
             } else {
@@ -217,6 +223,14 @@ public class Tweet$$Parcelable
                 boolean$$3 = (parcel$$3 .readInt() == 1);
             }
             tweet$$4 .favorited = boolean$$3;
+            int int$$8 = parcel$$3 .readInt();
+            java.lang.Integer integer$$1;
+            if (int$$8 < 0) {
+                integer$$1 = null;
+            } else {
+                integer$$1 = parcel$$3 .readInt();
+            }
+            tweet$$4 .favoriteCount = integer$$1;
             ExtendedEntities extendedEntities$$0 = com.codepath.apps.twitterclient.models.ExtendedEntities$$Parcelable.read(parcel$$3, identityMap$$1);
             tweet$$4 .extendedEntities = extendedEntities$$0;
             com.codepath.apps.twitterclient.models.Tweet tweet$$3 = tweet$$4;

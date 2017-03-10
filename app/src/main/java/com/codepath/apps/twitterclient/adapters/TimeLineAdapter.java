@@ -133,6 +133,24 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         tvPostTime.setText(getRelativeTimeAgo(tweet.createdAt));
         TextView tvBody = vh1.tvBody;
         tvBody.setText(tweet.text);
+        TextView tvRetweet = vh1.tvRetweet;
+        tvRetweet.setText(String.valueOf(tweet.retweetCount));
+        TextView tvFavorite = vh1.tvFavorite;
+        tvFavorite.setText(String.valueOf(tweet.favoriteCount));
+        ImageView ivFavorite = vh1.ivFavorite;
+        if(tweet.favorited)
+            ivFavorite.setImageResource(R.drawable.ic_favorite_red);
+        else
+            ivFavorite.setImageResource(R.drawable.ic_favorite);
+        ImageView ivReply = vh1.ivReply;
+//        ivReply.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getContext(), ProfileActivity.class);
+//                i.putExtra("screen_name", tweet.user.screenName);
+//                getContext().startActivity(i);
+//            }
+//        });
 
         new PatternEditableBuilder().
                 addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
@@ -176,7 +194,7 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     private void configureViewHolderPhoto(ViewHolderPhoto vh1, int position) {
         // Get the data model based on position
-        Tweet tweet = mTweets.get(position);
+        final Tweet tweet = mTweets.get(position);
 
         // Set item views based on your views and data model
         TextView tvUserName = vh1.tvUserName;
@@ -187,10 +205,47 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         tvPostTime.setText(getRelativeTimeAgo(tweet.createdAt));
         TextView tvBody = vh1.tvBody;
         tvBody.setText(tweet.text);
+
+        new PatternEditableBuilder().
+                addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+//                                Toast.makeText(getContext(), "Clicked username: " + text,
+//                                        Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(getContext(), ProfileActivity.class);
+                                i.putExtra("screen_name", text.substring(1));
+                                getContext().startActivity(i);
+                            }
+                        }).into(tvBody);
+
+        new PatternEditableBuilder().
+                addPattern(Pattern.compile("\\#(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+                                Toast.makeText(getContext(), "Clicked hashtag: " + text,
+                                        Toast.LENGTH_SHORT).show();
+//                                Intent i = new Intent(getContext(), ProfileActivity.class);
+//                                i.putExtra("screen_name", text.substring(1));
+//                                getContext().startActivity(i);
+                            }
+                        }).into(tvBody);
+
         ImageView ivUserPhoto = vh1.ivUserPhoto;
         Glide.with(mContext)
                 .load(tweet.user.profileImageUrl)
                 .into(ivUserPhoto);
+
+        ivUserPhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), ProfileActivity.class);
+                i.putExtra("screen_name", tweet.user.screenName);
+                getContext().startActivity(i);
+            }
+        });
+
         ImageView ivMediaPhoto = vh1.ivMediaPhoto;
 
         if(tweet.extendedEntities != null && tweet.extendedEntities.media != null)
@@ -205,6 +260,16 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
             }
         }
+
+        TextView tvRetweet = vh1.tvRetweet;
+        tvRetweet.setText(String.valueOf(tweet.retweetCount));
+        TextView tvFavorite = vh1.tvFavorite;
+        tvFavorite.setText(String.valueOf(tweet.favoriteCount));
+        ImageView ivFavorite = vh1.ivFavorite;
+        if(tweet.favorited)
+            ivFavorite.setImageResource(R.drawable.ic_favorite_red);
+        else
+            ivFavorite.setImageResource(R.drawable.ic_favorite);
     }
 
 

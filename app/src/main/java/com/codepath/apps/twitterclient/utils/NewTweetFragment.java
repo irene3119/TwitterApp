@@ -120,6 +120,7 @@ public class NewTweetFragment extends DialogFragment {
 
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                        Log.e("DEBUG", responseString);
                         Gson gson = new Gson();
                         Type collectionType = new TypeToken<Tweet>(){}.getType();
                         tweet = gson.fromJson(responseString,collectionType);

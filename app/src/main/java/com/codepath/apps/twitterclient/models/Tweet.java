@@ -27,6 +27,9 @@ public class Tweet {
     @SerializedName("favorited")
     @Expose
     public Boolean favorited;
+    @SerializedName("favorite_count")
+    @Expose
+    public Integer favoriteCount;
     @SerializedName("id_str")
     @Expose
     public String idStr;
