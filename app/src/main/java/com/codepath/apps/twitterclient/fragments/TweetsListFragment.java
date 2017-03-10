@@ -99,6 +99,12 @@ public class TweetsListFragment extends Fragment{
             return null;
     }
 
+    public void insertNewTweet(Tweet tweet) {
+        tweets.add(0,tweet);
+        adapter.notifyItemInserted(0);
+        linearLayoutManager.scrollToPosition(0);
+    }
+
     //need to be overwrite
     public void loadNextDataFromApi(int offset) {
         // Send an API request to retrieve appropriate paginated data

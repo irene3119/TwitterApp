@@ -2,6 +2,7 @@ package com.codepath.apps.twitterclient.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
@@ -9,11 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.activities.ProfileActivity;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.utils.PatternEditableBuilder;
 import com.codepath.apps.twitterclient.utils.ViewHolderOnlyText;
 import com.codepath.apps.twitterclient.utils.ViewHolderPhoto;
 
@@ -21,6 +24,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 /**
  * Created by Irene on 2017/3/4.
@@ -129,6 +133,33 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         tvPostTime.setText(getRelativeTimeAgo(tweet.createdAt));
         TextView tvBody = vh1.tvBody;
         tvBody.setText(tweet.text);
+
+        new PatternEditableBuilder().
+                addPattern(Pattern.compile("\\@(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+//                                Toast.makeText(getContext(), "Clicked username: " + text,
+//                                        Toast.LENGTH_SHORT).show();
+                                Intent i = new Intent(getContext(), ProfileActivity.class);
+                                i.putExtra("screen_name", text.substring(1));
+                                getContext().startActivity(i);
+                            }
+                        }).into(tvBody);
+
+        new PatternEditableBuilder().
+                addPattern(Pattern.compile("\\#(\\w+)"), Color.BLUE,
+                        new PatternEditableBuilder.SpannableClickedListener() {
+                            @Override
+                            public void onSpanClicked(String text) {
+                                Toast.makeText(getContext(), "Clicked hashtag: " + text,
+                                        Toast.LENGTH_SHORT).show();
+//                                Intent i = new Intent(getContext(), ProfileActivity.class);
+//                                i.putExtra("screen_name", text.substring(1));
+//                                getContext().startActivity(i);
+                            }
+                        }).into(tvBody);
+
         ImageView ivUserPhoto = vh1.ivUserPhoto;
         Glide.with(mContext)
                 .load(tweet.user.profileImageUrl)

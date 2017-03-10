@@ -29,8 +29,14 @@ public class HomeTimelineFragment extends TweetsListFragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         client = TwitterApplication.getRestClient(); //singleton client
         populateTimeline();
+    }
+
+    //update composed tweet from activity
+    public void updateTweet(Tweet tweet){
+        insertNewTweet(tweet);
     }
 
     //send API request to get the timeline json

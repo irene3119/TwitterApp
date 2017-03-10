@@ -18,7 +18,6 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.fragments.HomeTimelineFragment;
 import com.codepath.apps.twitterclient.fragments.MentionsTimelineFragment;
-import com.codepath.apps.twitterclient.fragments.TweetsListFragment;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.models.UserCredential;
 import com.codepath.apps.twitterclient.utils.NewTweetFragment;
@@ -40,7 +39,8 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
     private UserCredential userCredential;
     private FloatingActionButton composeBtn;
     private NewTweetFragment newTweetFragment;
-    private TweetsListFragment fragmentTweetsList;
+    private HomeTimelineFragment homeTimelineFragment;
+    private MentionsTimelineFragment mentionsTimelineFragment;
     private Tweet tweet;
 
 
@@ -92,6 +92,8 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
 
     private void setViews()
     {
+        homeTimelineFragment = new HomeTimelineFragment();
+        mentionsTimelineFragment = new MentionsTimelineFragment();
         //Get view pager
         ViewPager vpPager = (ViewPager) findViewById(R.id.viewpager);
         //Set ViewPagerAdapter for the pager
@@ -152,8 +154,7 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
     public void onFinishSettingDialog(Tweet newTweet){
         tweet = newTweet;
         Log.e("DEBUG",tweet.text);
-//        adapter.notifyItemInserted(0);
-//        linearLayoutManager.scrollToPosition(0);
+        homeTimelineFragment.updateTweet(tweet);
     }
 
     //Return the order of fragments for view pagers
@@ -170,9 +171,9 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
         @Override
         public Fragment getItem(int position) {
             if(position == 0) {
-                return new HomeTimelineFragment();
+                return homeTimelineFragment;
             } else if(position == 1) {
-                return  new MentionsTimelineFragment();
+                return mentionsTimelineFragment;
             } else {
                 return null;
             }

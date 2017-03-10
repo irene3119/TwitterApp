@@ -104,6 +104,10 @@
         "source": "/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "/Users/Irene/git/TwitterApp/app/build/intermediates/res/merged/debug/drawable/ic_edit.xml",
+        "source": "/Users/Irene/git/TwitterApp/app/src/main/res/drawable/ic_edit.xml"
+    },
+    {
         "merged": "/Users/Irene/git/TwitterClient/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
         "source": "/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/drawable/design_password_eye.xml"
     },
