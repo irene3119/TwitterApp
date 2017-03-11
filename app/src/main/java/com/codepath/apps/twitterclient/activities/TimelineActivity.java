@@ -92,6 +92,7 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
 
     private void setViews()
     {
+//        rvTimeline = (RecyclerView) findViewById(R.id.rvTimeline);
         homeTimelineFragment = new HomeTimelineFragment();
         mentionsTimelineFragment = new MentionsTimelineFragment();
         //Get view pager
@@ -104,6 +105,7 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
         tabStrip.setViewPager(vpPager);
         composeBtn = (FloatingActionButton) findViewById(R.id.fbtnCompose);
         composeTweet();
+
     }
 
     private void composeTweet() {

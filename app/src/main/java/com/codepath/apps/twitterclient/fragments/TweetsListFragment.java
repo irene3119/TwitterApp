@@ -1,5 +1,6 @@
 package com.codepath.apps.twitterclient.fragments;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,9 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.codepath.apps.twitterclient.R;
+import com.codepath.apps.twitterclient.activities.DetailActivity;
 import com.codepath.apps.twitterclient.adapters.TimeLineAdapter;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.utils.EndlessRecyclerViewScrollListener;
+import com.codepath.apps.twitterclient.utils.ItemClickSupport;
+
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,6 +65,19 @@ public class TweetsListFragment extends Fragment{
         };
         // Adds the scroll listener to RecyclerView
         rvTimeline.addOnScrollListener(scrollListener);
+
+        ItemClickSupport.addTo(rvTimeline).setOnItemClickListener(new ItemClickSupport.OnItemClickListener() {
+            @Override
+            public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+                // do it
+                Intent i = new Intent(getContext(),DetailActivity.class);
+                Tweet tweet = tweets.get(position);
+                i.putExtra("tweet", Parcels.wrap(tweet));
+                startActivity(i);
+
+                //Toast.makeText(SearchActivity.this,"Hello",Toast.LENGTH_SHORT).show();
+            }
+        });
 
         swipeContainer = (SwipeRefreshLayout) v.findViewById(R.id.swipeContainer);
         // Setup refresh listener which triggers new data loading
