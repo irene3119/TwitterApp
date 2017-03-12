@@ -1,9 +1,9 @@
 package com.codepath.apps.twitterclient.fragments;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -70,10 +70,11 @@ public class TweetsListFragment extends Fragment{
             @Override
             public void onItemClicked(RecyclerView recyclerView, int position, View v) {
                 // do it
-                Intent i = new Intent(getContext(),DetailActivity.class);
+                Intent i = new Intent(getContext(), DetailActivity.class);
                 Tweet tweet = tweets.get(position);
                 i.putExtra("tweet", Parcels.wrap(tweet));
                 startActivity(i);
+//                startActivityForResult(i,0);
 
                 //Toast.makeText(SearchActivity.this,"Hello",Toast.LENGTH_SHORT).show();
             }

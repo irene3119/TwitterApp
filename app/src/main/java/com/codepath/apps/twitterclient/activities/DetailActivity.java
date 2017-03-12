@@ -1,13 +1,18 @@
 package com.codepath.apps.twitterclient.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.utils.NewTweetFragment;
 import com.codepath.apps.twitterclient.utils.TwitterApplication;
 import com.codepath.apps.twitterclient.utils.TwitterClient;
 
@@ -17,7 +22,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity implements NewTweetFragment.NewTweetFragmentListener{
 
 
     private ImageView ivUserPhoto;
@@ -29,6 +34,9 @@ public class DetailActivity extends AppCompatActivity {
     private TextView tvRetweet;
     private ImageView ivFavorite;
     private TextView tvFavorite;
+    private ImageView ivReply;
+
+    private NewTweetFragment newTweetFragment;
 
     TwitterClient client;
 
@@ -57,6 +65,7 @@ public class DetailActivity extends AppCompatActivity {
         tvRetweet = (TextView) findViewById(R.id.tvRetweet);
         tvFavorite = (TextView) findViewById(R.id.tvLike);
         ivFavorite = (ImageView) findViewById(R.id.ivLike);
+        ivReply = (ImageView) findViewById(R.id.ivReply);
 
         Glide.with(this)
                 .load(tweet.user.profileImageUrl)
@@ -89,6 +98,12 @@ public class DetailActivity extends AppCompatActivity {
         else
             ivFavorite.setImageResource(R.drawable.ic_favorite);
 
+        ivReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showComposeDialog();
+            }
+        });
 
     }
 
@@ -107,5 +122,25 @@ public class DetailActivity extends AppCompatActivity {
         }
         return result;
 
+    }
+
+    //show reply fragment
+    public void showComposeDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        newTweetFragment = NewTweetFragment.newInstance(tweet);
+        newTweetFragment.show(fm, "reply_fragment");
+
+    }
+
+    @Override
+    public void onFinishSettingDialog(Tweet newTweet){
+//        tweet = newTweet;
+        Log.e("DEBUG","Detail reply:"+newTweet.text);
+        Intent intent = new Intent(this, TimelineActivity.class);
+        intent.putExtra("tweet", Parcels.wrap(newTweet));
+//        finish();
+//        i.putExtra("tweet", Parcels.wrap(newTweet));
+//        finish();
+        startActivity(intent);
     }
 }

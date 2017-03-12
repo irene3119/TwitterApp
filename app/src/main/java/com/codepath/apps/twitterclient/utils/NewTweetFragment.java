@@ -46,6 +46,8 @@ public class NewTweetFragment extends DialogFragment {
 
     private Tweet tweet;
     private UserCredential user;
+    private Tweet replyTweet;
+    private Long replyId;
 
     private NewTweetFragmentListener mCallback;
 
@@ -57,12 +59,16 @@ public class NewTweetFragment extends DialogFragment {
 
     }
 
-    public static NewTweetFragment newInstance(UserCredential user) {
+    public static NewTweetFragment newInstance(Tweet replyTweet) {
         NewTweetFragment frag = new NewTweetFragment();
-        if(user!= null)
+//        if(user != null)
+//        {
+//            args.putParcelable("User", Parcels.wrap(user));
+//        }
+        if(replyTweet != null)
         {
             Bundle args = new Bundle();
-            args.putParcelable("User", Parcels.wrap(user));
+            args.putParcelable("replyTweet", Parcels.wrap(replyTweet));
             frag.setArguments(args);
         }
         return frag;
@@ -93,8 +99,59 @@ public class NewTweetFragment extends DialogFragment {
         // Fetch arguments from bundle and set title
         if(getArguments() != null)
         {
-            user = (UserCredential) Parcels.unwrap(getArguments().getParcelable("User"));
+            replyTweet = (Tweet) Parcels.unwrap(getArguments().getParcelable("replyTweet"));
+            replyId = replyTweet.id;
         }
+        else
+        {
+            replyTweet = null;
+            replyId = null;
+        }
+        getUserCredential();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            if (context instanceof NewTweetFragmentListener){
+                mCallback = (NewTweetFragmentListener) context;
+            }
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString());
+        }
+    }
+
+
+    // Defines the listener interface
+    public interface NewTweetFragmentListener {
+        void onFinishSettingDialog(Tweet tweet);
+    }
+
+
+    private void getUserCredential() {
+        client.getUserCredential(new TextHttpResponseHandler() {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                Log.d("DEBUG", responseString);
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                Log.e("DEBUG",responseString);
+                Gson gson = new Gson();
+                Type collectionType = new TypeToken<UserCredential>(){}.getType();
+                user = gson.fromJson(responseString,collectionType);
+                setViews();
+            }
+        });
+
+    }
+
+    public void setViews() {
         tvUserName.setText(user.name);
         tvUserScreenName.setText("@"+user.screenName);
         Glide.with(getContext())
@@ -102,7 +159,10 @@ public class NewTweetFragment extends DialogFragment {
                 .into(ivUserPhoto);
         tvCharCount.setText("140");
 
-
+        if(replyTweet != null) {
+            etBody.setText("@"+replyTweet.user.screenName+" ");
+            etBody.requestFocus();
+        }
 
         btnTweet.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +172,7 @@ public class NewTweetFragment extends DialogFragment {
                 tweet.text = etBody.getText().toString();
                 Log.e("DEBUG","newtweet=" + tweet.text);
 
-                client.postStatus(tweet.text, new TextHttpResponseHandler() {
+                client.postStatus(tweet.text, replyId, new TextHttpResponseHandler() {
                     @Override
                     public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                         Log.e("DEBUG", responseString);
@@ -138,32 +198,14 @@ public class NewTweetFragment extends DialogFragment {
         });
 
 
-        //getDialog().setTitle("New Tweet");
+        if(replyId == null)
+            getDialog().setTitle("New Tweet");
+        else
+            getDialog().setTitle("Reply");
         // Show soft keyboard automatically and request focus to field
 
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception
-        try {
-            if (context instanceof NewTweetFragmentListener){
-                mCallback = (NewTweetFragmentListener) context;
-            }
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString());
-        }
-    }
-
-
-    // Defines the listener interface
-    public interface NewTweetFragmentListener {
-        void onFinishSettingDialog(Tweet tweet);
     }
 
     private final TextWatcher mTextEditorWatcher = new TextWatcher() {

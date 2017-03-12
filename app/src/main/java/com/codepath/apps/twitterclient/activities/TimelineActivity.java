@@ -65,6 +65,34 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
     }
 
     @Override
+    protected void onResume() {
+        //homeTimelineFragment.updateTweet(tweet);
+        Log.e("DEBUG","resume");
+        super.onResume();
+//        homeTimelineFragment.refreshDataFromApi();
+//        Intent i = getIntent();
+//        if(i != null)
+//        {
+//            Log.e("DEBUG","intent not null");
+//            if(Parcels.unwrap(i.getParcelableExtra("tweet")) != null) {
+//                Log.e("DEBUG","atweet not null");
+//                Tweet aTweet = (Tweet) Parcels.unwrap(i.getParcelableExtra("tweet"));
+//                homeTimelineFragment.updateTweet(aTweet);
+//            }
+//
+//        }
+
+    }
+
+//    @Override
+//    protected void onRestart() {
+//        //homeTimelineFragment.updateTweet(tweet);
+//        super.onRestart();
+//        finish();
+//        startActivity(getIntent());
+//    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -92,7 +120,6 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
 
     private void setViews()
     {
-//        rvTimeline = (RecyclerView) findViewById(R.id.rvTimeline);
         homeTimelineFragment = new HomeTimelineFragment();
         mentionsTimelineFragment = new MentionsTimelineFragment();
         //Get view pager
@@ -147,7 +174,7 @@ public class TimelineActivity extends AppCompatActivity implements NewTweetFragm
     //show compose fragment
     private void showComposeDialog() {
         FragmentManager fm = getSupportFragmentManager();
-        newTweetFragment = NewTweetFragment.newInstance(userCredential);
+        newTweetFragment = NewTweetFragment.newInstance(null);
         newTweetFragment.show(fm, "compose_fragment");
 
     }
