@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.2.0_a0b4710280dc719cd2dc25d0822ed813f62ee093.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.2.0_2864519e7e0a49c7e7f1afc3284566fc60bdba13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.2.0_e9732b0e40cfa1ec8abb0a441c5d3db839382ab4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/gson-2.6.2_73dfc2f1411454295ee7668b87e226d4b6db6c16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.2.0_038407d99ae3fbc266764ce251194cfcb7f2ed72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.9_5217ad2f0ffa996003803818975ff8feb8dbd9bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_8b38812c2f3d1e83834ecff73e3435650ae3b87b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_a4d46540f5c33aea9b866e2e8a84429072692d38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/percent/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cc03ddac6017ba6366944c3eb01efc8751a00a6b">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-percent-25.2.0_2910ce84b50d62a789d58cd80c41713bf8a418b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/com.github.Raizlabs.DBFlow/dbflow-core/4.0.0-beta5/844b464e949827e71b39145fe6be406ce40bfc4f/dbflow-core-4.0.0-beta5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="844b464e949827e71b39145fe6be406ce40bfc4f">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/dbflow-core-4.0.0-beta5_0239e3185727be3dae75778c551c4125819b8d34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_eee5f3be8664cf12e0e2835a5e566326f1c51419.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.astuetz-pagerslidingtabstrip-1.0.1_4d323ceae58a0454f895b62b2fda870291328167.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3cbfd8f5f4129b280ef581427d507ad1b2983f64">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta5_4237eecf2d75db010ce66ba843d89b8e53fbd06d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_f47d47981a6c3edf87f4413e5b993c7e187bddfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_d71f7bc3a5ffa4b35ad3e158d4997c111813c8ae.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.5.2/ecf534dba3a8446ce84cbb797d314763be212a68/glide-3.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecf534dba3a8446ce84cbb797d314763be212a68">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/glide-3.5.2_3eea03a0674d90cdc7d936dcff96094642b8aafc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.2.0_39e8877f5df5420036dd9ca4e76a70d6f1005b3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.2.0_5721330490f6062fd8ecfed6622d38e55107c256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.2.0_076232a44a0cdbf3ba4914cd1921febfc8946df3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_56ef1c6a2701820fd8c0d3eb93624fda0cddc49c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/transition/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.2.0_e7ee1fe3e8153f7d934bf3ffc17dd55779f00c44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_fb2a8b6f28f58c36eb4a666369ab7be8d9554e76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_4368a2714c9d25d262c7d008dd70132b8e14be29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_6368d114eeeefb678d1dedbc63c2c01f1aaca326.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_908a9071dd5690eec1501bac3b7d816e608c4a04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/codepath-utils_df90a375333a30d27f019c6e00ed688542ab5cc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0492333dc94d7c11c933116e6ddee16a60594e98">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3_fd6a1d16de5164c41c05dc40bf4e5efbc7ee5682.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_29146f794e190d0aeef2ce264aad3a060778927b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.2.0_c4a2365ed48c8ce9d97c77865bf7b00273521915.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_666f8d0813ffab6e86516641e4cc65b4bf0338d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.github.Raizlabs.DBFlow/dbflow/4.0.0-beta5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3cbfd8f5f4129b280ef581427d507ad1b2983f64">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.github.Raizlabs.DBFlow-dbflow-4.0.0-beta5_e1bb59b329c5ffca4baf2468edcae58d147e7f2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/httpclient-4.3.6_6aae1beec3d0d59ba61767ea6d181b2bef12b86e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/libs/codepath-utils.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a948907bd42abbd2f5f18e66c50aa81e5d07791">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/codepath-utils_63fe3674e44fb186cc87663d8de7748d2f822d48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.2.0_583d72d2a1e0d5d2ea8bff4799950abb6d0a3783.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_a0a39d5317ee1b8af3ac445f73d4375c8e5bde7f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_3b2ef969ec7f62f59c179a3377e700ef58497293.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.2.0_2e6281b7dc4f2e15684b92ec300317473a5451cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.2.0_751b187bc0f6dc5a357b5e66327e15d0f95341f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_b0bb9bbe2c40122d5a95c7474be4988ba7ddfb07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.1.6/2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5/parceler-api-1.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a06b6b1ecf5dadee8a874dfb51ad018fde3e6c5">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/parceler-api-1.1.6_8f0468d63cf2c4e3af5fef691a53061068f41cce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.android.support/percent/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cc03ddac6017ba6366944c3eb01efc8751a00a6b">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.android.support-percent-25.2.0_62f816b0e09dab15edf4553083079dfc99d4ae89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterClient/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/Users/Irene/git/TwitterClient/app/build/intermediates/pre-dexed/debug/com.astuetz-pagerslidingtabstrip-1.0.1_95d928b90cec1d186d1a1376d3cc2dc7f9caf76e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Irene/git/TwitterApp/app/build/intermediates/exploded-aar/com.codepath.libraries/android-oauth-handler/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bac2c6fd56dae63bf540102c8f12cfbf5802545f">
+        <dex dex="/Users/Irene/git/TwitterApp/app/build/intermediates/pre-dexed/debug/com.codepath.libraries-android-oauth-handler-1.1.0_57adc17da1d0512822b026bde91446e464cae3a2.jar" />
+    </item>
+
+</items>
